@@ -12,17 +12,17 @@ LOGO_HEIGHT = 100
 FRAME_BG = "#0D6EFD"
 
 
-# GUI app main window
+# GUI APP MAIN WINDOW
 window = tk.Tk()
 
-# Configure window
+# TKINTER WINDOW CONFIGURATION
 window.title("My GUI")
 window.geometry("1000x650+170+25")
 window.resizable(False, False)
 window.config(bg="#0D6EFD")
 
 
-# Define button commands here
+# BUTTON COMMANDS
 def on_exit():
 	window.destroy()
 
@@ -92,7 +92,7 @@ def get_course_event(event):
 
 
 
-#           Place Widgets here
+#          TKINTER WIDGETS
 
 # PHOTOIMAGES here
 python_pil_image = Image.open("assets/images/Python Logo.png")
@@ -119,7 +119,6 @@ logo_frame = tk.Frame(window, bg=FRAME_BG)
 # LABELS, ENTRY, BUTTONS here
 newline = tk.Label(topframe_center, bg=FRAME_BG).pack(pady=2)
 exit_btn = tk.Button(topframe_right, text="Exit", bg=FRAME_BG, width=13, command=on_exit)
-
 myname_label = tk.Label(topframe_center, text="Rensyl Quiroben", bg=FRAME_BG, font=("Tahoma", 28))
 mycourse_label = tk.Label(topframe_center, text="Computer Science", bg=FRAME_BG, underline=1, font=("System", 28))
 caption_label = tk.Label(topframe_center, text="Personal GUI", fg="blue", bg=FRAME_BG, font=("@System", 25))
@@ -145,36 +144,13 @@ myname_label.pack()
 mycourse_label.pack()
 caption_label.pack()
 python_label.pack(pady=10, side="left")
-# bootstrap_label.pack(pady=10, side="right")
-# sqlite_label.pack(pady=10, side="left", expand=True)
 portfolio_btn.pack(pady=10)
 name_label.pack(ipady=10, ipadx=100)
 course_entry.pack(ipady=8)
 submit_btn.pack(pady=8)
 course_label.pack()
 
-# CONFIGURATIONS
-# topframe.configure(highlightbackground="yellow", highlightthickness=2)
-# topframe_center.configure(highlightbackground="black", highlightthickness=1)
-# topframe_right.configure(highlightbackground="black", highlightthickness=1)
-# logo_frame.configure(highlightbackground="black", highlightthickness=2)
-# bottomframe.configure(highlightbackground="yellow", highlightthickness=2)
-# exit_btn.configure(highlightbackground="black", highlightthickness=1)
-# myname_label.configure(highlightbackground="black", highlightthickness=1)
-# mycourse_label.configure(highlightbackground="black", highlightthickness=1)
-# caption_label.configure(highlightbackground="black", highlightthickness=1)
-# python_label.configure(highlightbackground="black", highlightthickness=1)
-# bootstrap_label.configure(highlightbackground="black", highlightthickness=1)
-# sqlite_label.configure(highlightbackground="black", highlightthickness=1)
-# portfolio_btn.configure(highlightbackground="black", highlightthickness=1)
-# name_label.configure(highlightbackground="black", highlightthickness=1)
-# course_entry.configure(highlightbackground="black", highlightthickness=1)
-# submit_btn.configure(highlightbackground="black", highlightthickness=1)
-# course_label.configure(highlightbackground="black", highlightthickness=1)
-
-
 
 # Main event loop
 if __name__ == "__main__":
 	window.mainloop()
-	# help(window.iconphoto)
